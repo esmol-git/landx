@@ -1,1 +1,163 @@
-header { flex: 0 0 auto; }
+header {
+  flex: 0 0 auto;
+}
+
+.header {
+  position: relative;
+  min-height: 100vh;
+  z-index: 4;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 10, 15, 0.85);
+    z-index: -1;
+  }
+
+  &__title {
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 165px;
+
+    &--blue {
+      color: $blue-dark;
+      font-weight: 700;
+    }
+
+    &--white {
+      font-weight: 700;
+    }
+  }
+
+  &__subtitle {
+    font-family: $source;
+    max-width: 670px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 45px auto 0;
+    text-align: center;
+  }
+
+  &__btn {
+    margin-top: 100px;
+    text-align: center;
+  }
+}
+
+.navbar {
+  box-shadow: 0 1px 9px #676767;
+  background-color: #ffffff;
+  padding: 25px 0;
+  z-index: 9;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-start {
+    padding-top: 50px;
+  }
+}
+
+.menu {
+  display: flex;
+
+  &__item {
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    color: $black;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+    transition: 0.5s;
+
+    &:hover,
+    &.is-active {
+      color: $blue-dark;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+
+    &::before {
+      content: "";
+      width: 17px;
+      height: 1px;
+      background-color: $blue-dark;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: all 0.5s;
+    }
+  }
+}
+
+.is-active.menu__link::before {
+  opacity: 1;
+}
+
+.form {
+  padding: 25px;
+  max-width: 945px;
+  margin: 70px auto 0;
+  background-color: rgba(#000, 0.5);
+  white-space: nowrap;
+
+  &__input {
+    width: 214px;
+    height: 54px;
+    box-shadow: -3px 0 0 #0199e6;
+    border: 1px solid rgba(1, 153, 230, 0.3);
+    background-color: #000000;
+    margin-right: 22px;
+    padding-left: 20px;
+    color: $grey;
+    box-sizing: border-box;
+
+    &::placeholder {
+      opacity: 0.5;
+      color: #ffffff;
+      font-family: $source;
+      font-weight: 400;
+      line-height: 30px;
+    }
+  }
+}
+.social {
+  display: flex;
+  &__item {
+    margin-right: 5px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: $white;
+    border-radius: 50%;
+  }
+  &__icon {
+    fill: #000;
+  }
+}
