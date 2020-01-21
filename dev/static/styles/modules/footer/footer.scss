@@ -1,1 +1,30 @@
-footer { flex: 0 0 auto; }
+footer {
+    flex: 0 0 auto;
+}
+
+.footer {
+    text-align: center;
+    background-color: #f7f8fa;
+    padding: 80px 0;
+
+    &__copyright {
+        color: #919191;
+        margin-top: 25px;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px !important;
+
+        &-link {
+            display: inline-block;
+            width: 27px;
+            height: 27px;
+            background-color: #919191;
+            padding: 6px;
+            border-radius: 6px;
+            margin: 0 3px;
+        }
+    }
+}

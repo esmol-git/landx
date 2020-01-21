@@ -1,0 +1,17 @@
+.video {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 25px;
+        margin-top: 45px;
+    }
+
+    &__item {
+        padding-left: 50px;
+        background-repeat: no-repeat;
+        color: $black;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+}

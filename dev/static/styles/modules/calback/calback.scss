@@ -1,0 +1,154 @@
+.calback {
+    &__sponsor {
+        display: flex;
+        justify-content: space-between;
+        width: 660px;
+        margin: 80px auto 0;
+    }
+
+    &__slider {
+        margin-top: 80px;
+
+        &-item {
+            width: 360px;
+            padding-top: 20px;
+        }
+
+    }
+
+    &__text {
+        font-family: $source;
+        width: 361px;
+        height: 226px;
+        box-shadow: 0 2px 0 #e5e5e5;
+        background-color: #f7f8fa;
+        padding: 50px 35px 35px;
+        text-align: center;
+        color: $black;
+        line-height: 25px;
+        position: relative;
+        margin-bottom: 30px;
+
+        &::after {
+            content: "\201D";
+            position: absolute;
+            top: -16px;
+            left: 50%;
+            transform: translateX(-50%) rotate(180deg);
+            width: 32px;
+            height: 32px;
+            box-shadow: 0 0 0 4px #e5e5e5;
+            border: 3px solid #ffffff;
+            background-color: #0199e6;
+            color: #fff;
+            border-radius: 2px;
+            font-size: 30px;
+            line-height: 38px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -34px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 17px 17px 17px 17px;
+            /* размер и форма */
+            border-color: #f7f8fa transparent transparent transparent;
+            filter: drop-shadow(0 2px 0 #e5e5e5);
+            /* тень */
+
+        }
+    }
+
+    &__name {
+        color: #0199e6;
+        font-family: $source;
+        font-weight: 700;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    &__prof {
+        color: #727272;
+        font-family: $source;
+        font-size: 13px;
+        line-height: 25px;
+        text-align: center;
+    }
+}
+
+.calback-help {
+    background-image: url(../images/content/calback/calback-bg.jpg);
+    height: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.65);
+        z-index: -1;
+    }
+
+    &__suptitle {
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    &__title {
+        color: #ffffff;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 65px;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        padding: 18px 10px;
+
+        &::after {
+            content: "\2192";
+            padding-left: 8px;
+        }
+    }
+
+}
+
+.contact {
+    padding: 80px 0;
+    text-align: center;
+
+    &__text {
+        color: #323232;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+
+    &__link {
+        display: inline-block;
+        color: $blue;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        background-image: url(../images/content/icon/mail.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-left: 25px;
+
+    }
+}

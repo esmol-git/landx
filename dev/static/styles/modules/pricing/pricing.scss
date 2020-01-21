@@ -1,0 +1,99 @@
+.pricing {
+    background-color: #f7f8fa;
+
+    &-row {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 75px;
+    }
+
+    &__card {
+        min-width: 360px;
+        border: 1px solid #e5e5e5;
+        background-color: #ffffff;
+        text-align: center;
+        transition: all .5s;
+
+        &:hover {
+            .pricing__card-header {
+                background-color: $blue-dark;
+            }
+
+            .pricing__card-header__subtitle {
+                span {
+                    color: #fff;
+                }
+            }
+
+            .pricing__card-footer__btn {
+                background-color: $blue-dark;
+                color: #ffffff;
+                border: none;
+            }
+        }
+
+        &-row {
+            &__name {
+                font-family: $source;
+            }
+
+            &__number {
+                font-family: $source;
+                font-weight: 700;
+            }
+        }
+
+        &-header {
+            background-color: #323232;
+            padding: 22px 0;
+            color: #fff;
+            transition: all .5s;
+
+            &__title {
+                font-size: 24px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+
+            &__subtitle {
+                font-family: $source;
+
+                span {
+                    color: $blue-dark;
+                    font-weight: 700;
+                    transition: all .5s;
+                }
+            }
+        }
+
+        &-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 18px 30px;
+            border-bottom: 1px dashed #e3e3e3;
+        }
+
+        &-footer {
+            padding: 18px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__price {
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            &__btn {
+                color: $grey;
+                font-weight: 700;
+                text-transform: uppercase;
+                padding: 12px;
+                border: 1px solid $grey;
+                border-radius: 6px;
+                transition: all .5s;
+            }
+
+        }
+    }
+}

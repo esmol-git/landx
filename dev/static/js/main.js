@@ -1,5 +1,20 @@
 $(document).ready(function () {
     svg4everybody({});
+    $('.product__slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        arrows: false,
+        dots: true,
+    })
+    $('.calback__slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    })
 });
 
 
