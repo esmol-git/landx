@@ -10,6 +10,7 @@ html {
 
 body {
   font-family: $raleway;
+  font-weight: 400;
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -54,6 +55,7 @@ a {
 
 img {
   max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -114,6 +116,10 @@ button {
   width: 100%;
 }
 
+.section {
+  padding: 100px 0;
+}
+
 .btn {
   width: 178px;
   max-height: 54px;
@@ -146,6 +152,12 @@ button {
       color: $blue;
     }
   }
+}
+
+.text {
+  color: #727272;
+  font-family: $source;
+  line-height: 25px;
 }
 
 //Модули

@@ -1,0 +1,78 @@
+.brief {
+    .brief__browser {
+        margin-right: 60px;
+    }
+
+    &--two {
+        background-color: #f7f8fa;
+
+        .brief__browser {
+            margin-left: 60px;
+        }
+    }
+
+    &-wrapper {
+        display: flex;
+    }
+
+    &__browser {
+        flex-basis: 50%;
+
+    }
+
+    &__info {
+        flex-basis: 50%;
+
+        &-title {
+            color: $black;
+            font-size: 35px;
+            font-weight: 500;
+            line-height: 50px;
+            position: relative;
+            padding-bottom: 10px;
+            margin-bottom: 35px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 68px;
+                height: 1px;
+                background-color: $blue-dark;
+
+            }
+        }
+
+        &-subtitle {
+            margin-bottom: 45px;
+        }
+
+        &-block {
+            position: relative;
+            margin-bottom: 45px;
+            padding-left: 50px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &__title {
+                color: $black;
+                font-weight: 700;
+                line-height: 25px
+            }
+
+            &__icon {
+                width: 32px;
+                height: 32px;
+                background-color: $blue-dark;
+                position: absolute;
+                left: 0;
+                top: 0;
+                padding: 10px;
+
+            }
+        }
+    }
+}
